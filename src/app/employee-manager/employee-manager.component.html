@@ -1,0 +1,72 @@
+<div>
+    <img width="100%"
+        src="https://blog-assets.freshworks.com/freshcaller-cloud-pbx/wp-content/uploads/2020/10/22175319/Remote-phone-systems-help-augment-employee-productivity_Freshcaller-blog.gif"
+        alt="">
+</div>
+<!-- employee management -->
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center text-primary mt-4">Employee Management System</h1>
+            <p style="text-align: justify; color: rgb(11, 11, 114);">
+                Welcome to our Employee Management System (EMS), a comprehensive platform designed to simplify the
+                search, update, and viewing of employee details. With our user-friendly interface and powerful search
+                capabilities, you can effortlessly find the information you need. Whether you're searching for personal
+                details, contact information, employment history, or qualifications, our EMS provides a centralized
+                database that ensures quick and accurate results. Additionally, our system allows you to update employee
+                details seamlessly, ensuring that your records are always up to date. You can easily modify personal
+                information, employment records, and other relevant data. Moreover, our EMS offers a convenient and
+                secure way to view employee details, providing comprehensive profiles that include essential information
+                and relevant documents.
+            </p>
+            <a routerLink="/employee/add" style="float: right;" class="btn btn-primary mt-3">
+                <i class="fa-solid fa-user-plus"></i> Add Employee</a>
+        </div>
+    </div>
+
+    <!-- search -->
+    <div class="row">
+        <div class="col-6">
+            <div class="search-container">
+                <input type="text" (keyup)="search($event)" name="search" placeholder="Search your employee"
+                    class="search-input">
+                <a href="#" class="search-btn">
+                    <i class="fas fa-search"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+<br>
+    <!-- card design -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6" *ngFor="let employee of allEmployees | filter:searchKey:'name'">
+                <div class="card m-4" style="width: 21rem; color: rgb(6, 6, 116);">
+                    <div class="image">
+                        <img [src]="employee.photo" class="card-img-top" alt="Chicago Skyscrapers" />
+
+                    </div>
+                    <div class="card-body bg-info text-center" style="background: linear-gradient(160deg,#dff5f5,#3619f0);
+                ">
+                        <h5 class="card-title">{{employee.name}}</h5>
+                        <p class="card-text">{{employee.role}}</p>
+                    </div>
+                    <ul class="list-group list-group-light list-group-small">
+                        <li class="list-group-item px-4" style="color: rgb(6, 6, 116);">Id No: {{employee.id}}</li>
+                        <li class="list-group-item px-4" style="color: rgb(6, 6, 116);">Mobile: {{employee.phone}}</li>
+                        <li class="list-group-item px-4" style="color: rgb(6, 6, 116);">Email: {{employee.email}}</li>
+                    </ul>
+                    <div class="card-body">
+                        <a routerLink="/employee/view/{{employee.id}}" class="card-link btn btn-success"
+                            style="text-decoration: none;"><i class="fa fa-eye text-dark"
+                                aria-hidden="true"></i>View</a>
+                        <a routerLink="/employee/update/{{employee.id}}" class="card-link btn btn-info"
+                            style="text-decoration: none;"><i class="fa fa-pencil" aria-hidden="true"></i>Update</a>
+                        <a (click)="deleteEmployee(employee.id)" href="#" class="card-link btn btn-danger"
+                            style="text-decoration: none;"><i class="fa fa-trash text-dark"
+                                aria-hidden="true"></i>Delete</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

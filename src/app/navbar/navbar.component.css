@@ -1,0 +1,10 @@
+span{
+    font-family: 'Oleo Script', cursive;
+    color: blue;
+    font-size: 30px;
+}
+nav{
+    background: linear-gradient(160deg,#dff5f5,#a9a0db);
+    /* position: sticky;
+    top: 0; */
+}

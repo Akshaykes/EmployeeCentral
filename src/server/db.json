@@ -1,0 +1,74 @@
+{
+  "employees": [
+    {
+      "id": "7012",
+      "name": "John Doe",
+      "dob": "21/02/2000",
+      "phone": "9292929292",
+      "email": "johndoe@gmail.com",
+      "photo": "https://th.bing.com/th/id/OIG.vzIWyPclpKkd1ezpVwdG?pid=ImgGn",
+      "company": "Google",
+      "role": "Software Developer"
+    },
+    {
+      "id": "7013",
+      "name": "Tom Smith",
+      "dob": "25/04/1997",
+      "phone": "9393939293",
+      "email": "tomsmith@gmail.com",
+      "photo": "https://th.bing.com/th/id/OIG.z2UEYPwobk3PuMo_A8nU?pid=ImgGn",
+      "company": "Yahoo",
+      "role": "Web Developer"
+    },
+    {
+      "id": "7014",
+      "name": "Brian S",
+      "dob": "21/02/1989",
+      "phone": "9494949494",
+      "email": "briansmith@gmail.com",
+      "photo": "https://th.bing.com/th/id/OIG.6zf9XnOA9Qepboalf5SW?pid=ImgGn",
+      "company": "Google",
+      "role": "Product Manager"
+    },
+    {
+      "id": "7015",
+      "name": "David Miller",
+      "dob": "24/05/1978",
+      "photo": "https://th.bing.com/th/id/OIG.FGAG2nfqjSEKongP7vGk?pid=ImgGn",
+      "phone": "9898989898",
+      "email": "david@gmail.com",
+      "company": "AB Company",
+      "role": "Full Stack Developer"
+    },
+    {
+      "id": "7016",
+      "name": "charles v",
+      "dob": "03/05/1992",
+      "photo": "https://th.bing.com/th/id/OIG.SPT1nfTYpish3Zjz5Q0V?pid=ImgGn",
+      "phone": "9696969696",
+      "email": "charles@gmail.com",
+      "company": "xyz compzny",
+      "role": "HR Manager"
+    },
+    {
+      "id": "7017",
+      "name": "Natasha s",
+      "dob": "11/08/1994",
+      "photo": "https://th.bing.com/th/id/OIG.z3pqEE_oxPw_dcLVu4K7?pid=ImgGn",
+      "phone": "9797979797",
+      "email": "natasha@gmail.com",
+      "company": "abc company",
+      "role": "Business Analyst"
+    },
+    {
+      "id": "7018",
+      "name": "Priyanka k",
+      "dob": "21/12/1997",
+      "phone": "9292929293",
+      "email": "priyanka@gmail.com",
+      "company": "Dell ",
+      "role": "software engineer",
+      "photo": "https://th.bing.com/th/id/OIG.5efA6qq1jyvQJSArOWp6?pid=ImgGn"
+    }
+  ]
+}

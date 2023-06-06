@@ -1,0 +1,81 @@
+<br> <br>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center text-primary mt-4"><i class="fa-solid fa-user-plus"></i> Add Employee</h1>
+            <br>
+            <p style="text-align: justify;">
+                Welcome to our Employee Management System (EMS), a comprehensive platform designed to simplify the
+                search, update, and viewing of employee details. With our user-friendly interface and powerful search
+                capabilities, you can effortlessly find the information you need. Whether you're searching for personal
+                details, contact information, employment history, or qualifications, our EMS provides a centralized
+                database that ensures quick and accurate results. Additionally, our system allows you to update employee
+                details seamlessly, ensuring that your records are always up to date. You can easily modify personal
+                information, employment records, and other relevant data. Moreover, our EMS offers a convenient and
+                secure way to view employee details, providing comprehensive profiles that include essential information
+                and relevant documents.
+            </p>
+        </div>
+    </div>
+
+    <!-- {{employee | json}} -->
+    <!-- add contact form with image -->
+    <div class="row">
+        <!-- form -->
+        <div class="col-6">
+
+         
+
+            <form class="border p-3 rounded">
+                <!-- id -->
+                <div class="form-floating mb-3">
+                    <input [(ngModel)]="employee.id" name="EmployeeId"  type="email" class="form-control"  placeholder="Id">
+                    <label for="floatingInput">Employee Id</label>
+                  </div>
+                  <!-- name -->
+                  <div class="form-floating mb-3">
+                    <input [(ngModel)]="employee.name" name="EmployeeName"  type="text" class="form-control"  placeholder="Name">
+                    <label >Name</label>
+                  </div>
+                  <!-- DOB -->
+                  <div class="form-floating mb-3">
+                    <input [(ngModel)]="employee.dob" name="DOB" type="text" class="form-control"  placeholder="DOB">
+                    <label >DOB</label>
+                  </div>
+                  <!-- photo url -->
+                  <div class="form-floating mb-3">
+                    <input [(ngModel)]="employee.photo" name="Photo" type="text" class="form-control"  placeholder="Photo Url">
+                    <label >Photo Url</label>
+                  </div>
+                  <!-- phonenumber -->
+                  <div class="form-floating mb-3">
+                    <input [(ngModel)]="employee.phone" name="Phone" type="text" class="form-control"  placeholder="Phone Number">
+                    <label >Phone Number</label>
+                  </div>
+                  <!-- email address -->
+                  <div class="form-floating mb-3">
+                    <input [(ngModel)]="employee.email" name="Email" type="text" class="form-control"  placeholder="Email Address">
+                    <label >Email Address</label>
+                  </div>
+                  <!-- company name -->
+                  <div class="form-floating mb-3">
+                    <input [(ngModel)]="employee.company" name="Company" type="text" class="form-control"  placeholder="Company Name">
+                    <label >Company Name</label>
+                  </div>
+                  <!-- title -->
+                  <div class="form-floating mb-3">
+                    <input [(ngModel)]="employee.role" name="Role" type="text" class="form-control"  placeholder="Role">
+                    <label >Role</label>
+                  </div>
+                  
+                  <button (click)="addEmployee()" type="button" class="btn btn-success">Add Employee</button>
+                  <button routerLink="" class="btn btn-danger" style="float: right;">Close</button>
+            </form>
+        </div>
+        <!-- image -->
+        <div class="col-6">
+            <img width="100%" height="450px" [src]="employee.photo">
+        </div>
+    </div>
+</div>
+
